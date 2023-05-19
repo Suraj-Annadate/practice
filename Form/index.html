@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- the entire body must be written by student -->
+    <form method="get" action="#"> <!-- method =get, anyone can see data and if we use post then cant see anybodys data -->
+        <div>
+            <label for="name"> Name</label> <br>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+            <label for="email"> Email</label> <br>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="gender"> Gender</label> <br>
+            <input type="radio" id="gender" value="male" name="gender" required>Male
+            <input type="radio" id="gender" value="female" name="gender" required>Femle
+        </div>
+        <div>
+            <label for="laptop"> Laptop Brands</label> <br>
+            <select id="laptop" name="laptop">
+                <option value="apple">Apple</option>
+                <option value="asus">Asus</option>
+                <option value="hp">HP</option>
+            </select> <br>
+        </div>
+        <div>
+            <label for="age">Age</label><br>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div>
+            <label for="dob">DOB</label<br>
+                <input type="date" id="dob" name="name" required>
+        </div>
+        <div>
+            <label for="password">Password</label> <br>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="portfolio">Portfolio URL</label><br>
+            <input type="url" id="portfolio" name="portfolio">
+        </div>
+        <button type="submit">Submit</button>
+
+    </form>
+    <script type="text/javascript" src="./script.js">
+    </script>
+
+</body>
+
+</html>

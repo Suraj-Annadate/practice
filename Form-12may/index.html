@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <!-- the entire body must be written by student -->
+    <form method="get" action="#"> <!-- method =get, anyone can see data and if we use post then cant see anybodys data -->
+        <h1>Flipkart Vendor Form</h1>
+        <div>
+            <label for="name"> Name</label> <br>
+            <input type="text" id="name" name="name" placeholder="first name" required>
+            <input type="text" id="name" name="name" placeholder="last name" required>
+        </div>
+        <div>
+            <label for="dob">Date of Birth</label><br>
+                <input type="date" id="dob" name="name" required>
+        </div>
+        <div>
+            <label for="msg">Current Location</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="6" placeholder="text"></textarea>
+        </div>
+        <div>
+            <label for="email"> Email</label> <br>
+            <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
+        </div>
+        <div>
+            <label for="file">Upload your aadhar card</label><br>
+            <input type="file" id="file" name="file">
+
+        </div>
+        <div>
+            <label for="pan">PAN Card Number</label><br>
+            <input type="text" id="pan" name="pan" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}">
+        </div>
+
+        <div>
+            <label for="item">Items for sale</label><br>
+            <select id="item" name="item"> 
+                
+                <option value="electronic">Electronic</option>
+                <option value="grocery">Grocery</option>
+                <option value="clothes">Clothes</option>
+            </select> <br>
+        </div>
+        <div>
+            <label for="place"> Are you from India?</label> <br>
+            <input type="radio" id="place" value="yes" name="place" required>Yes
+            <input type="radio" id="place" value="no" name="place" required>No
+        </div>
+        <div>
+            <label for="age">Age</label><br>
+            <input type="number" id="age" name="age" required>
+        </div>
+
+        <div>
+            <label for="location">Locations open for delivery:</label><br>
+            Delhi: <input type="checkbox" name="location" value="delhi"> 
+            Banglore: <input type="checkbox" name="location" value="banglore">
+            Mumbai: <input type="checkbox" name="location" value="mumbai"> 
+        </div>
+
+        <input type="submit">
+        <input type="reset">
+
+    </form>
+    <script type="text/javascript" src="./script.js">
+    </script>
+
+</body>
+
+</html>
