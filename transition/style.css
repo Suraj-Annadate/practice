@@ -1,0 +1,28 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    transition-property: width,height,background-color;
+    transition-delay: 2s;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+div:hover{
+    width: 200px;
+    height: 200px; 
+    background-color: red;
+}
+
+input{
+    border: 2px solid lightblue;
+    width: 50%;
+    height: 40px;
+    transition-property: outline;
+    transition-delay: 1s;
+    transition-duration: 3s;
+}
+
+input:focus{
+outline: 2px solid blue;
+}

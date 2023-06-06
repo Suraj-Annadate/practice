@@ -23,10 +23,10 @@
 .navbar{
     background-color: black;
     position: sticky;
-    top: 0px;
+    top: 50px;
     left: 0px;
     right: 0px;
-    width: 100%;
+    
 }
 
 .navbar a{
